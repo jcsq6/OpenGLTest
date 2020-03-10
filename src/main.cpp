@@ -24,8 +24,7 @@ int main(void)
     gladLoadGL();
 
     if(!gladLoadGL()) {
-        printf("Something went wrong!\n");
-        exit(-1);
+        return(-1);
     }
 
     /* Loop until the user closes the window */
