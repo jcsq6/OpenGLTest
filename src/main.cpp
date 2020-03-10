@@ -21,6 +21,8 @@ int main(void)
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
 
+    gladLoadGL();
+
     if(!gladLoadGL()) {
         printf("Something went wrong!\n");
         exit(-1);
